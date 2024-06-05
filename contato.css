@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+body {
+    font-size: 100%;
+    background-image: url(img/resumo-liso-marrom-parede-fundo-layout-designstudioroomweb-templatebusiness-relatorio-com-liso.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso fará com que a imagem de fundo fique fixa na tela */
+}
+
+.cabecalho {
+    background-color: #e6b68b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px; /* Arredondamento dos cantos */
+    animation: entradaCabecalho 0.6s ease-out; /* Adiciona a animação de entrada */
+}
+
+@keyframes entradaCabecalho {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.logo {
+    font-size: 15px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Opcional: alinha os itens verticalmente */
+
+}
+
+
+.cabecalho-menu-item {
+    width: 130px;
+    height: 60px;
+    color: #713112;
+    border: 3px solid #713112;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #e6b68b;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+}
+
+.cabecalho-menu-item:hover {
+    background: #713112;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.painel1 {
+    background-color: #e6b68b; /* Cor de fundo do painel com opacidade */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra do painel */
+    margin-bottom: 20px; /* Margem inferior */
+    display: inline-block; /* Ajusta a largura do painel ao tamanho do conteúdo */
+    margin-top: 35px;
+    color: #713112;
+    animation: entradaPainel 0.9s ease-out;
+  
+}
+
+.painel1 h1 {
+    font-size: 35px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura para ocupar toda a altura visível da página */
+}
+
+.criadores {
+    display: flex;
+    flex-direction: row; /* Altera a direção do flex para linha */
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo horizontal */
+    align-items: center;
+    gap: 120px; /* Define o espaço entre os elementos */
+}
+
+.criador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.criador img {
+    width: 280px;
+    height: auto;
+}
+
+.criador p {
+    font-size: 20px;
+    color: #713112;
+}
+
+.painel {
+    background-color: #e6b68b; /* Cor de fundo do painel */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra do painel */
+    margin-bottom: 40px; /* Margem inferior */
+    animation: entradaPainel 0.9s ease-out;
+}
+
+@keyframes entradaPainel {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

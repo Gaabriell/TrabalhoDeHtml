@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-image: url(img/cadeira-de-couro-marrom-escuro-com-estofamento-de-couro-em-forma-de-diamante_124507-75715.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso fará com que a imagem de fundo fique fixa na tela */
+}
+
+.cabecalho {
+    background-color: #e6b68b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px; /* Arredondamento dos cantos */
+    animation: entradaCabecalho 0.7s ease-out; /* Adiciona a animação de entrada */
+}
+
+@keyframes entradaCabecalho {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.logo {
+    font-size: 15px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Opcional: alinha os itens verticalmente */
+
+}
+
+
+.cabecalho-menu-item {
+    width: 130px;
+    height: 60px;
+    color: #713112;
+    border: 3px solid #713112;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #e6b68b;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+}
+
+.cabecalho-menu-item:hover {
+    background: #713112;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+.painel {
+    background-color: #e6b68b; /* Cor de fundo do painel */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do painel */
+    animation: entradaPainel 0.9s ease-out;
+}
+
+
+@keyframes entradaPainel {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+.painel input[type="email"],
+.painel input[type="password"] {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove a borda de foco ao clicar no campo */
+}
+
+.painel input[type="email"]:focus,
+.painel input[type="password"]:focus {
+    border-color: #007bff; /* Cor da borda quando o campo está em foco */
+}
+
+.painel input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.painel input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.container{
+    color: #713112;
+
+}
+
+.btn-login {
+    background-color: #ECD6C4;
+    width: 130px;
+    height: 45px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+.btn-login:hover {
+    color: black;
+    background-color: #328ef1ec;
+    font-size: 1.3em;
+}
+
+.btn-cadastro {
+    background-color: #ECD6C4;
+    width: 130px;
+    height: 45px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+
+
+.btn-cadastro:hover {
+    color: black;
+    background-color: #57e776e8;
+    font-size: 1.3em;
+}
+
+
+
+
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-segundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.conteudo-segundario-titulo {
+    border-top: 0.6px solid #ffffff;
+    padding-top: 50px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color:#ffffff;
+    margin-bottom: 16px;
+}
+
+.conteudo-segundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color:#ffffff;
+}
+
+.rodape{
+    text-align: center;
+    color: #713112;
+    background-color: #e6b68b;
+    padding: 15px;
+    border-top: 0.6px solid #ffffff;
+    border-radius: 15px; /* Arredondamento dos cantos */
+}
